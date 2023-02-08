@@ -1,5 +1,5 @@
 import * as React from "react";
-// import { ReactElement } from 'react';
+import ReactElement from 'react';
 import { IMaskInput } from "react-imask";
 import NumberFormat, { InputAttributes } from "react-number-format";
 import Box from "@mui/material/Box";
@@ -13,7 +13,7 @@ interface CustomProps {
   name: string;
 }
 
-const TextMaskCustom = React.forwardRef<ReactElement, CustomProps>(
+const TextMaskCustom = React.forwardRef<HTMLElement, CustomProps>(
   function TextMaskCustom(props, ref) {
     const { onChange, ...other } = props;
     return (
